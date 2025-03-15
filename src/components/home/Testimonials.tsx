@@ -1,13 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-
+import avatar from "@/assets/images/avatar-1.jpeg";
+import avatar2 from "@/assets/images/avatar-2.jpeg";
+import avatar3 from "@/assets/images/avatar-3.jpeg";
+import Image, { StaticImageData } from "next/image";
 interface Testimonial {
   id: number;
   name: string;
   role: string;
-  image: string;
+  image: StaticImageData;
   quote: string;
   rating: number;
 }
@@ -17,8 +21,7 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "Sarah Johnson",
     role: "Parent of ADHD Child",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+    image: avatar,
     quote:
       "The cognitive assessment for my son was life-changing. The detailed insights helped us understand his learning style, and the strategies provided have made a tremendous difference in his academic performance.",
     rating: 5,
@@ -27,8 +30,7 @@ const testimonials: Testimonial[] = [
     id: 2,
     name: "David Chen",
     role: "Business Executive",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+    image: avatar2,
     quote:
       "The career aptitude testing gave me clarity on my strengths and weaknesses. I was able to pivot my career path based on the findings, and I've never been happier with my professional life.",
     rating: 5,
@@ -37,21 +39,10 @@ const testimonials: Testimonial[] = [
     id: 3,
     name: "Emma Williams",
     role: "Graduate Student",
-    image:
-      "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?w=200&h=200&fit=crop",
+    image: avatar3,
     quote:
       "After struggling with academic anxiety, the neuropsychological testing helped identify the root causes. With their recommended strategies, I'm now performing better than ever in my studies.",
     rating: 5,
-  },
-  {
-    id: 4,
-    name: "Michael Thompson",
-    role: "Retired Teacher",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
-    quote:
-      "The emotional intelligence evaluation was eye-opening. It helped me understand patterns in my relationships and provided practical tools for improvement. Highly recommended for anyone seeking personal growth.",
-    rating: 4,
   },
 ];
 
@@ -92,8 +83,10 @@ const Testimonials = () => {
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div className="md:w-1/3 flex flex-col items-center text-center md:text-left md:items-start">
                   <div className="relative w-20 h-20 rounded-full overflow-hidden mb-4">
-                    <img
+                    <Image
                       src={testimonials[activeIndex].image}
+                      width={500}
+                      height={500}
                       alt={testimonials[activeIndex].name}
                       className="w-full h-full object-cover"
                     />

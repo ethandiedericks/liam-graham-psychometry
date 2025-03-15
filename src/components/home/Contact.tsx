@@ -278,11 +278,6 @@ const Contact = () => {
                     Open in Google Maps
                   </Button>
                 </div>
-                <img
-                  src="https://images.unsplash.com/photo-1577224682124-2444e21b4e93?w=800&h=300&fit=crop"
-                  alt="Office location"
-                  className="w-full h-full object-cover"
-                />
               </div>
             </div>
           </div>
