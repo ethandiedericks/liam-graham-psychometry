@@ -2,7 +2,7 @@ export const menuItems = [
     { name: "Home", href: "/" },
   { name: "Sevices", href: "/services" },
   { name: "About", href: "/about" },
-  { name: "Payment Terms", href: "/" },
+  { name: "Payment Terms", href: "/payment" },
 
 ];
 
