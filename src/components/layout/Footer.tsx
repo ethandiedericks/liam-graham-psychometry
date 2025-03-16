@@ -184,7 +184,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 flex-col flex-wrap items-end justify-between gap-6 border-t py-6">
           <small className="text-muted-foreground order-last block text-center text-sm md:order-first">
-            © {new Date().getFullYear()} Liam Graham Psychology, All rights
+            © {new Date().getFullYear()} Liam Graham Psychometry, All rights
             reserved
           </small>
 
