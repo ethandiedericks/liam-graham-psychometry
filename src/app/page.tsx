@@ -1,3 +1,4 @@
+import FloatingCTA from "@/components/FloatingCTA";
 import "./globals.css";
 
 import About from "@/components/home/About";
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <Contact />
+      <FloatingCTA />
     </main>
   );
 }
