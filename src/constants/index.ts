@@ -8,32 +8,25 @@ export const menuItems = [
 
 export const footerLinks = [
     {
-        group: 'Product',
+        group: 'Quick Links',
         items: [
             {
-                title: 'Features',
-                href: '#',
+                title: 'Home',
+                href: '/',
             },
             {
-                title: 'Solution',
-                href: '#',
-            },
-            {
-                title: 'Customers',
-                href: '#',
-            },
-            {
-                title: 'Pricing',
-                href: '#',
-            },
-            {
-                title: 'Help',
-                href: '#',
+                title: 'Services',
+                href: '/services',
             },
             {
                 title: 'About',
-                href: '#',
+                href: '/about',
             },
+            {
+                title: 'Contact',
+                href: '/contact',
+            },
+   
         ],
     },
     {
@@ -102,19 +95,11 @@ export const footerLinks = [
         group: 'Legal',
         items: [
             {
-                title: 'Licence',
-                href: '#',
-            },
-            {
-                title: 'Privacy',
+                title: 'Privacy Policy',
                 href: '#',
             },
             {
                 title: 'Cookies',
-                href: '#',
-            },
-            {
-                title: 'Security',
                 href: '#',
             },
         ],

@@ -1,8 +1,8 @@
 import { Logo } from "@/components/logo";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+
 import { footerLinks } from "@/constants";
+import HPCSA from "@/assets/images/HPCSA.png";
+import Image from "next/image";
 
 import Link from "next/link";
 
@@ -16,27 +16,7 @@ export default function Footer() {
           </Link>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <Link
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X/Twitter"
-              className="text-muted-foreground hover:text-primary block"
-            >
-              <svg
-                className="size-6"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"
-                ></path>
-              </svg>
-            </Link>
-            <Link
-              href="#"
+              href="https://www.linkedin.com/in/liam-graham-851721252/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -75,31 +55,7 @@ export default function Footer() {
                 ></path>
               </svg>
             </Link>
-            <Link
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Threads"
-              className="text-muted-foreground hover:text-primary block"
-            >
-              <svg
-                className="size-6"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19.25 8.505c-1.577-5.867-7-5.5-7-5.5s-7.5-.5-7.5 8.995s7.5 8.996 7.5 8.996s4.458.296 6.5-3.918c.667-1.858.5-5.573-6-5.573c0 0-3 0-3 2.5c0 .976 1 2 2.5 2s3.171-1.027 3.5-3c1-6-4.5-6.5-6-4"
-                  color="currentColor"
-                ></path>
-              </svg>
-            </Link>
+
             <Link
               href="#"
               target="_blank"
@@ -161,26 +117,16 @@ export default function Footer() {
               </div>
             ))}
           </div>
-          <form className="row-start-1 border-b pb-8 text-sm md:col-span-2 md:border-none lg:col-span-1">
-            <div className="space-y-4">
-              <Label htmlFor="mail" className="block font-medium">
-                Newsletter
-              </Label>
-              <div className="flex gap-2">
-                <Input
-                  type="email"
-                  id="mail"
-                  name="mail"
-                  placeholder="Your email"
-                  className="h-8 text-sm"
-                />
-                <Button size="sm">Submit</Button>
-              </div>
-              <span className="text-muted-foreground block text-sm">
-                Don&apos;t miss any update!
-              </span>
-            </div>
-          </form>
+          <div className="">
+            <Image
+              src={HPCSA}
+              width={300}
+              height={121}
+              alt="HPCSA logo"
+              className="w-[150px] md:w-[200px] h-auto mx-auto md:mx-0"
+            />
+            <p className="mt-2 text-sm text-muted-foreground">PMT 0101460</p>
+          </div>
         </div>
         <div className="mt-12 flex-col flex-wrap items-end justify-between gap-6 border-t py-6">
           <small className="text-muted-foreground order-last block text-center text-sm md:order-first">
