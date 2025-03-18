@@ -6,6 +6,8 @@ import hero from "@/assets/images/photo-1506794778202-cad84cf45f1d.jpeg";
 import avatar1 from "@/assets/images/avatar-1.jpeg";
 import avatar2 from "@/assets/images/avatar-2.jpeg";
 import avatar3 from "@/assets/images/avatar-3.jpeg";
+import { contactDetails } from "@/constants";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -35,21 +37,25 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in opacity-0 animation-delay-300">
-              <Button
-                size="lg"
-                className="bg-psycho-blue-600 hover:bg-psycho-blue-700 text-white shadow-blue transition-all duration-300 hover:translate-y-[-2px]"
-              >
-                Book an Assessment
-              </Button>
+              <Link href={"/contact"} passHref>
+                <Button
+                  size="lg"
+                  className="bg-psycho-blue-600 hover:bg-psycho-blue-700 hover:cursor-pointer text-white shadow-blue transition-all duration-300 hover:translate-y-[-2px]"
+                >
+                  Book an Assessment
+                </Button>
+              </Link>
 
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-psycho-blue-300 text-psycho-blue-700 hover:bg-psycho-blue-50 transition-all duration-300"
-              >
-                <Phone size={18} className="mr-2" />
-                <a href="tel:+11234567890">Call (123) 456-7890</a>
-              </Button>
+              <Link href="tel:+11234567890" passHref>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-psycho-blue-300 text-psycho-blue-700 hover:bg-psycho-blue-50 hover:cursor-pointer transition-all duration-300"
+                >
+                  <Phone size={18} className="mr-2" />
+                  Call {contactDetails.phone}
+                </Button>
+              </Link>
             </div>
 
             <div className="flex items-center space-x-4 pt-2 animate-fade-in opacity-0 animation-delay-400">

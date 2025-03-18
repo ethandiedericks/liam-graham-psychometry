@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 interface FAQItem {
   question: string;
@@ -108,12 +109,12 @@ const FAQ = () => {
             <p className="text-psycho-gray-600">
               Still have questions? We&apos;re here to help!
             </p>
-            <a
+            <Link
               href="#contact"
               className="text-psycho-blue-600 font-medium hover:text-psycho-blue-800 transition-colors inline-block mt-2"
             >
               Contact us for more information
-            </a>
+            </Link>
           </div>
         </div>
       </div>

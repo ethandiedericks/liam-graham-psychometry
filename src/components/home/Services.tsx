@@ -11,6 +11,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface Service {
   id: number;
@@ -167,12 +168,14 @@ const Services = () => {
               </div>
 
               <div className="mt-4 pt-4 border-t border-psycho-gray-100">
-                <Button
-                  variant="ghost"
-                  className="text-psycho-blue-600 p-0 h-auto hover:bg-transparent hover:text-psycho-blue-800 font-medium"
-                >
-                  Learn more <ArrowRight size={16} className="ml-1" />
-                </Button>
+                <Link href={"/services"}>
+                  <Button
+                    variant="ghost"
+                    className="text-psycho-blue-600 p-0 h-auto hover:bg-transparent hover:text-psycho-blue-800 hover:cursor-pointer hover:underline font-medium"
+                  >
+                    Learn more <ArrowRight size={16} className="ml-1" />
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}

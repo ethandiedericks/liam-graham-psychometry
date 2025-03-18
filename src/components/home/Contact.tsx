@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Calendar, Clock } from "lucide-react";
+import { contactDetails } from "@/constants";
+import Link from "next/link";
 // import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
@@ -190,8 +192,13 @@ const Contact = () => {
               </Button>
 
               <p className="text-xs text-psycho-gray-500 text-center mt-4">
-                By submitting this form, you agree to our privacy policy and
-                consent to be contacted regarding our services.
+                By submitting this form, you agree to our{" "}
+                <span>
+                  <Link href={"/privacy-policy"} className="underline">
+                    privacy policy
+                  </Link>
+                </span>{" "}
+                and consent to be contacted regarding our services.
               </p>
             </form>
           </div>
@@ -210,12 +217,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-lg">Phone</h4>
-                      <a
-                        href="tel:+11234567890"
+                      <Link
+                        href={`tel:${contactDetails.phone}`}
                         className="text-white/80 hover:text-white transition-colors"
                       >
-                        (123) 456-7890
-                      </a>
+                        {contactDetails.phone}
+                      </Link>
                     </div>
                   </div>
 
@@ -225,12 +232,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-lg">Email</h4>
-                      <a
-                        href="mailto:info@mindfulmetrics.com"
+                      <Link
+                        href={`mailto:${contactDetails.email}`}
                         className="text-white/80 hover:text-white transition-colors"
                       >
-                        info@mindfulmetrics.com
-                      </a>
+                        {contactDetails.email}
+                      </Link>
                     </div>
                   </div>
 
@@ -241,11 +248,13 @@ const Contact = () => {
                     <div>
                       <h4 className="font-medium text-lg">Location</h4>
                       <address className="text-white/80 not-italic">
-                        123 Cognitive Avenue
+                        {contactDetails.location[0]}
                         <br />
-                        Suite 200
+                        {contactDetails.location[1]}
                         <br />
-                        Mindful City, MC 12345
+                        {contactDetails.location[2]}
+                        <br />
+                        {contactDetails.location[3]}
                       </address>
                     </div>
                   </div>
@@ -273,10 +282,26 @@ const Contact = () => {
               </div>
 
               <div className="h-60 relative">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.651361933912!2d25.56845992552307!3d-33.95009402319553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad3d4890e8b77%3A0x67d6f18b368f7e5b!2sMetropolitan%20Port%20Elizabeth%20(Greenacres)!5e0!3m2!1sen!2sza!4v1742303777929!5m2!1sen!2sza"
+                  className="absolute inset-0 w-full h-full"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+
                 <div className="absolute inset-0 bg-black/30 z-10 flex items-center justify-center">
-                  <Button className="bg-white text-psycho-blue-700 hover:bg-psycho-gray-100">
-                    Open in Google Maps
-                  </Button>
+                  <Link
+                    href={
+                      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.651361933912!2d25.56845992552307!3d-33.95009402319553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad3d4890e8b77%3A0x67d6f18b368f7e5b!2sMetropolitan%20Port%20Elizabeth%20(Greenacres)!5e0!3m2!1sen!2sza!4v1742303777929!5m2!1sen!2sza"
+                    }
+                    target="blank"
+                    passHref
+                  >
+                    <Button className="bg-white text-psycho-blue-700 hover:bg-psycho-gray-100 hover:cursor-pointer">
+                      Open in Google Maps
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

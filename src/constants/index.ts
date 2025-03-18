@@ -1,3 +1,10 @@
+export const contactDetails = {
+    email: "lgrahampsychometry@outlook.com",
+    phone: "+27605196193",
+    location: ["279 Cape Road", "Metropolitan Office Park, Block A", "Greenacres, Newton Park", "6055"]
+};
+
+
 export const menuItems = [
     { name: "Home", href: "/" },
   { name: "Sevices", href: "/services" },
@@ -29,79 +36,35 @@ export const footerLinks = [
    
         ],
     },
+    
     {
-        group: 'Solution',
+        group: "Explore",
         items: [
-            {
-                title: 'Startup',
-                href: '#',
-            },
-            {
-                title: 'Freelancers',
-                href: '#',
-            },
-            {
-                title: 'Organizations',
-                href: '#',
-            },
-            {
-                title: 'Students',
-                href: '#',
-            },
-            {
-                title: 'Collaboration',
-                href: '#',
-            },
-            {
-                title: 'Design',
-                href: '#',
-            },
-            {
-                title: 'Management',
-                href: '#',
-            },
-        ],
-    },
-    {
-        group: 'Company',
-        items: [
-            {
-                title: 'About',
-                href: '#',
-            },
-            {
-                title: 'Careers',
-                href: '#',
-            },
-            {
-                title: 'Blog',
-                href: '#',
-            },
-            {
-                title: 'Press',
-                href: '#',
-            },
-            {
-                title: 'Contact',
-                href: '#',
-            },
-            {
-                title: 'Help',
-                href: '#',
-            },
-        ],
-    },
+          { title: "Our Services", href: "/#services" },
+          { title: "About Us", href: "/#about" },
+          { title: "Testimonials", href: "/#testimonials" },
+          { title: "FAQ", href: "/#faq" },
+   
+        ]
+      },
     {
         group: 'Legal',
         items: [
             {
                 title: 'Privacy Policy',
-                href: '#',
+                href: '/privacy-policy',
             },
-            {
-                title: 'Cookies',
-                href: '#',
-            },
+      
         ],
     },
 ]
+
+
+import servicePageImage from "@/assets/images/services-page.jpg"
+import aboutPageImage from "@/assets/images/about-page.jpg"
+import paymentTermsPageImage from "@/assets/images/payment-terms-page.jpg"
+import privacyPolicyPageImage from "@/assets/images/privacy-policy-page.jpg"
+import contactPageImage from "@/assets/images/contact-page.jpg"
+import aboutFace from "@/assets/images/liam-graham-about.jpeg"
+
+export {servicePageImage, aboutPageImage, paymentTermsPageImage, privacyPolicyPageImage, contactPageImage, aboutFace }

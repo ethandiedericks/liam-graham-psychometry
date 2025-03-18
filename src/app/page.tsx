@@ -1,4 +1,3 @@
-import FloatingCTA from "@/components/FloatingCTA";
 import "./globals.css";
 
 import About from "@/components/home/About";
@@ -7,6 +6,7 @@ import FAQ from "@/components/home/Faq";
 import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
 import Testimonials from "@/components/home/Testimonials";
+import FloatingCTA from "@/components/FloatingCTA";
 
 export default function Home() {
   return (

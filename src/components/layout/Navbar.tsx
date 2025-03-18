@@ -24,7 +24,7 @@ export const Navbar = () => {
     <header>
       <nav
         data-state={menuState && "active"}
-        className="fixed z-20 w-full px-2"
+        className="fixed z-30 w-full px-2"
       >
         <div
           className={cn(
@@ -40,7 +40,14 @@ export const Navbar = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <Image src={logo} width={60} height={60} alt="logo" />
+                <Image
+                  src={logo}
+                  width={60}
+                  height={60}
+                  alt="logo"
+                  priority={true}
+                  unoptimized={true}
+                />
               </Link>
 
               <button
@@ -75,6 +82,7 @@ export const Navbar = () => {
                     <li key={index}>
                       <Link
                         href={item.href}
+                        onClick={() => setMenuState(false)} // Add this line to close the menu
                         className="text-psycho-gray-600 hover:text-accent-foreground block duration-150"
                       >
                         <span>{item.name}</span>
@@ -85,7 +93,7 @@ export const Navbar = () => {
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button asChild size={"sm"}>
-                  <Link href="/contact">
+                  <Link href="/contact" onClick={() => setMenuState(false)}>
                     <span>Contact</span>
                   </Link>
                 </Button>
