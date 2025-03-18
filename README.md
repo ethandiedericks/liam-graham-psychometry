@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Liam Graham Psychometry
+
+A professional website showcasing psychometric services and business information for Liam Graham Psychometry.
+
+## Overview
+
+This website serves as a digital presence for Liam Graham Psychometry, providing information about the various psychometric services offered, including:
+
+- Scholastic Screening
+- Special School Placement
+- ADHD Screening
+- Cognitive Ability Assessment
+- School Readiness Evaluation
+- Behavior Assessment
+- Concessions
+- IQ Testing
+- Career Guidance
+
+## Technologies Used
+
+This project is built with modern web technologies:
+
+- **Next.js 15** - React framework with App Router
+- **React 19** - UI library
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **next-themes** - Theme management
+- **Sonner** - Toast notifications
+- **Lucide React** - Icon library
+- **pnpm** - Fast, disk space efficient package manager
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (LTS version recommended)
+- pnpm
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ethandiedericks/liam-graham-psychometry
+cd liam-graham-psychometry
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Set up environment variables by creating a `.env.local` file in the root directory with the following:
 
-## Learn More
+```
+NEXT_PUBLIC_SITE_URL=https://liamgrahampsychometry.co.za
+NEXT_PUBLIC_SITE_NAME=Liam Graham Psychometry
+NEXT_PUBLIC_SITE_DESCRIPTION=Liam Graham Psychometry specializes in Scholastic Screening, Special School Placement, ADHD Screening, Cognitive Ability, School Readiness, Behaviour, Concessions, IQ and Career Guidance.
+THEME_COLOR_LIGHT=#ffffff
+THEME_COLOR_DARK=#111111
+GOOGLE_VERIFICATION=your-google-verification-code
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run the development server with Turbopack enabled:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Generate a production build:
+
+```bash
+pnpm build
+```
+
+### Production
+
+Start the production server:
+
+```bash
+pnpm start
+```
+
+
+## Deployment
+
+This project is deployed on [Vercel](https://vercel.com), which provides:
+
+- Continuous deployment
+- Preview deployments for pull requests
+- Automatic HTTPS
+- Global CDN
+- Edge functions
+
+## License
+
+This project is private and not licensed for public use.
+
+## Contributors
+
+- Nevaeh Solutions (Pty) Ltd
+
+
+
+## Contact
+
+For any inquiries about the website, please contact +27812799063.
