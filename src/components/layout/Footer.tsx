@@ -89,26 +89,6 @@ const Footer = () => {
                 ></path>
               </svg>
             </Link>
-            <Link
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="text-muted-foreground hover:text-psycho-blue-600 block"
-            >
-              <svg
-                className="size-6"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"
-                ></path>
-              </svg>
-            </Link>
           </div>
         </div>
       </div>
@@ -157,7 +137,7 @@ const Footer = () => {
                 {contactDetails.phone}
               </Link>
             </div>
-            <div className="flex items-center justify-center md:justify-start space-x-2 mt-3">
+            <div className="flex items-center justify-center md:justify-start space-x-2  mt-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -189,7 +169,10 @@ const Footer = () => {
                 alt="HPCSA logo"
                 className="w-[150px] md:w-[200px] h-auto mx-auto md:mx-0"
               />
-              <p className="mt-2 text-sm text-muted-foreground">PMT 0101460</p>
+              <div className="mt-2 flex flex-col lg:flex-row gap-2 md:gap-4">
+                <p className=" text-sm text-muted-foreground">PMT 0101460</p>
+                <p className=" text-sm text-muted-foreground">PR 1170139</p>
+              </div>
             </div>
           </div>
         </div>

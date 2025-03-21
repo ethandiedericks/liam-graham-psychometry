@@ -1,103 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import {
-  Brain,
-  Target,
-  Users,
-  Sparkles,
-  Award,
-  Clipboard,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-interface Service {
-  id: number;
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-  benefits: string[];
-}
-
-const services: Service[] = [
-  {
-    id: 1,
-    title: "Cognitive Assessment",
-    description:
-      "Comprehensive evaluation of intellectual abilities, memory, attention, and executive functioning to identify strengths and areas for improvement.",
-    icon: <Brain className="w-6 h-6 text-psycho-blue-600" />,
-    benefits: [
-      "Detailed analysis of cognitive strengths and weaknesses",
-      "Personalized strategies for cognitive enhancement",
-      "Educational and career planning insights",
-    ],
-  },
-  {
-    id: 2,
-    title: "Neuropsychological Testing",
-    description:
-      "In-depth assessment of brain-behavior relationships to diagnose conditions and develop targeted intervention strategies.",
-    icon: <Target className="w-6 h-6 text-psycho-blue-600" />,
-    benefits: [
-      "Early detection of neurological conditions",
-      "Customized rehabilitation programs",
-      "Progress monitoring for recovery",
-    ],
-  },
-  {
-    id: 3,
-    title: "Learning Disability Assessment",
-    description:
-      "Specialized testing to identify learning disabilities and provide accommodations and interventions for academic success.",
-    icon: <Users className="w-6 h-6 text-psycho-blue-600" />,
-    benefits: [
-      "Educational accommodations recommendations",
-      "Personalized learning strategies",
-      "Self-advocacy tools and resources",
-    ],
-  },
-  {
-    id: 4,
-    title: "Emotional Intelligence Evaluation",
-    description:
-      "Measure and enhance your ability to understand and manage emotions for improved relationships and mental wellbeing.",
-    icon: <Sparkles className="w-6 h-6 text-psycho-blue-600" />,
-    benefits: [
-      "Improved self-awareness and social skills",
-      "Stress management techniques",
-      "Better relationship dynamics",
-    ],
-  },
-  {
-    id: 5,
-    title: "Career Aptitude Testing",
-    description:
-      "Identify your natural talents, interests, and work preferences to make informed educational and career decisions.",
-    icon: <Award className="w-6 h-6 text-psycho-blue-600" />,
-    benefits: [
-      "Aligned career path recommendations",
-      "Strengths-based professional development",
-      "Increased job satisfaction",
-    ],
-  },
-  {
-    id: 6,
-    title: "Psychological Assessment",
-    description:
-      "Evaluate psychological functioning to diagnose mental health conditions and develop effective treatment plans.",
-    icon: <Clipboard className="w-6 h-6 text-psycho-blue-600" />,
-    benefits: [
-      "Accurate diagnosis of psychological conditions",
-      "Evidence-based treatment recommendations",
-      "Improved quality of life",
-    ],
-  },
-];
+import { services as indexServices } from "@/constants"; // Import services from constants
 
 const Services = () => {
   const [activeService, setActiveService] = useState<number | null>(null);
+
+  // Map the index services to match the simpler structure used in this component
+  const simplifiedServices = indexServices.map((service) => ({
+    id: service.id,
+    title: service.title,
+    description: service.description,
+    icon: <service.icon.component className={service.icon.className} />,
+    benefits: service.benefits,
+  }));
 
   return (
     <section id="services" className="section-padding relative overflow-hidden">
@@ -122,7 +41,7 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
+          {simplifiedServices.map((service) => (
             <div
               key={service.id}
               className={`bg-white rounded-xl p-6 transition-all duration-300 hover:shadow-medium border ${

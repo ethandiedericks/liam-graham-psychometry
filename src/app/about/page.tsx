@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-psycho-blue-50/40">
+    <div className="min-h-screen bg-white">
       <main className="pt-20 pb-20">
         {/* Page Header */}
         <PageHeader
@@ -42,18 +42,24 @@ const AboutPage = () => {
 
               <div className="prose prose-lg text-psycho-gray-700 max-w-none">
                 <p>
-                  Founded in 2008, our practice has been at the forefront of
-                  psychological assessment, committed to providing accurate,
-                  insightful evaluations that help individuals understand
-                  themselves better and make informed decisions about their
-                  mental health and cognitive functioning.
+                  Since establishing my psychometry practice in 2023, I have
+                  been dedicated to conducting scientifically grounded
+                  psychological assessments to help individuals gain a clearer
+                  understanding of their cognitive and emotional functioning. In
+                  this time, I have provided assessments to a diverse range of
+                  clients, always ensuring ethical, accurate, and objective
+                  evaluations in line with professional guidelines.
                 </p>
+                <br />
                 <p>
-                  We believe that quality psychological assessment is
-                  transformative. By understanding your unique cognitive
-                  profile, emotional patterns, and psychological strengths and
-                  challenges, you can make better life choices, access
-                  appropriate support, and fulfill your potential.
+                  I believe that psychological assessment plays a crucial role
+                  in self-awareness and informed decision-making. By exploring
+                  your cognitive abilities, emotional patterns, and
+                  psychological strengths, you can gain valuable insights to
+                  navigate personal and professional challenges with confidence.
+                  My goal is to provide assessments that support your personal
+                  growth while upholding the highest standards of professional
+                  integrity and care.
                 </p>
               </div>
 
@@ -81,12 +87,8 @@ const AboutPage = () => {
                     <Trophy size={24} className="text-psycho-blue-600" />
                   </div>
                   <div>
-                    <p className="text-psycho-gray-900 font-medium">
-                      15+ Years
-                    </p>
-                    <p className="text-psycho-gray-600 text-sm">
-                      Of Excellence
-                    </p>
+                    <p className="text-psycho-gray-900 font-medium">BA Hons</p>
+                    <p className="text-psycho-gray-600 text-sm">Cum Laude</p>
                   </div>
                 </div>
               </div>

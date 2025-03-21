@@ -27,7 +27,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When will I receive my assessment results?",
     answer:
-      "Most clients receive their results within 1-2 weeks after completing the assessment. We'll schedule a feedback session to explain your results in detail, answer any questions, and discuss recommendations. You'll also receive a comprehensive written report.",
+      "Most clients receive their results within 2-3 weeks after completing the assessment. We'll schedule a feedback session to explain your results in detail, answer any questions, and discuss recommendations. You'll also receive a comprehensive written report.",
   },
   {
     question: "Are the assessment results confidential?",
@@ -35,9 +35,9 @@ const faqItems: FAQItem[] = [
       "Yes, all assessment results are strictly confidential and protected under healthcare privacy laws. Information is only shared with third parties (such as schools or employers) with your explicit written consent, except in rare cases where there is a risk of harm to yourself or others.",
   },
   {
-    question: "Does insurance cover psychometric assessments?",
+    question: "Does Medical cover psychometric assessments?",
     answer:
-      "Many insurance plans cover psychometric assessments when they're medically necessary. Coverage varies by provider and plan. We recommend contacting your insurance company directly to verify coverage. We can provide documentation to help with insurance claims.",
+      "Many Medical plans cover psychometric assessments when they're medically necessary. Coverage varies by provider and plan. We recommend contacting your Medical company directly to verify coverage.",
   },
 ];
 

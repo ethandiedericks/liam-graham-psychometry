@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-psycho-blue-50/40">
+    <div className="min-h-screen bg-white">
       <main className="pt-20 pb-20">
         <PageHeader
           title="Get In Touch"
@@ -26,7 +26,7 @@ const ContactPage = () => {
           imageAlt="Contact us"
         />
 
-        <div className=" my-16">
+        <div className=" myt-16">
           <Contact />
         </div>
       </main>

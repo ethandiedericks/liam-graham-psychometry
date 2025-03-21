@@ -1,6 +1,5 @@
 import PageHeader from "@/components/PageHeader";
 import { paymentTermsPageImage } from "@/constants";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,6 +12,33 @@ export const metadata: Metadata = {
       "Information about our billing process, accepted insurance plans, payment methods, and financial assistance options.",
   },
 };
+
+export const FEE_STRUCTURE_SECTION = {
+  heading: "Fee Structure",
+  points: [
+    "Rates are based on GEMS medical aid tariffs released annually. Cash-paying clients receive a discounted rate.",
+    "Fees for assessments are charged on an hourly basis for client-facing time (intake interview, test administration, and feedback). There is no charge for report writing or scoring.",
+    "An assessment quotation will be provided as soon as possible after the intake session once assessment needs are clarified. Extra time, if needed, is charged per hour.",
+    "Payment must be received before the final report is provided.",
+  ],
+};
+
+export const PAYMENT_POLICY_SECTION = {
+  heading: "Payment Policy",
+  points: [
+    "Medical Aid: We accept medical aid payments. It's the client's responsibility to claim from their medical aid. If a claim is rejected, the client (or parent for minors) must settle the bill within 72 hours.",
+    "EFT Payments: We accept cash payments via Electronic Funds Transfer (EFT) only—no hard cash. EFT payments must be made upon receipt of invoice, with proof of payment sent to lgrahampsychometry@outlook.com using your ID number as the reference.",
+  ],
+};
+
+export const CANCELLATION_POLICY_SECTION = {
+  heading: "Cancellation Policy",
+  points: [
+    "We require 24 hours’ cancellation notice. Without this, a cancellation fee will be charged.",
+    "Missed Appointments: Cancellation fees for missed appointments cannot be claimed through medical aid as no service was rendered. The client (or parent for minors) must settle the bill within 72 hours.",
+  ],
+};
+
 const PaymentTermsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-psycho-blue-50/40">
@@ -20,7 +46,7 @@ const PaymentTermsPage = () => {
         <PageHeader
           title="Billing Information"
           subtitle="Payment Terms & Policies"
-          description="Understanding our billing process, insurance coverage, and payment options."
+          description="Understanding our billing process, medical aid coverage, and payment options."
           imageSrc={paymentTermsPageImage}
           imageAlt="Payment and billing"
         />
@@ -29,81 +55,43 @@ const PaymentTermsPage = () => {
         <section className="container my-16">
           <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-medium p-8 md:p-12">
             <div className="space-y-8">
+              {/* Fee Structure */}
               <div>
                 <h2 className="font-serif text-2xl font-bold mb-4 text-psycho-gray-900">
-                  Our Billing Process
+                  {FEE_STRUCTURE_SECTION.heading}
                 </h2>
-                <p className="text-psycho-gray-600">
-                  Assessment fees are determined based on the type and
-                  complexity of the evaluation required. We will always discuss
-                  fees upfront during your initial consultation, and you will
-                  receive a written fee agreement before any services begin.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-serif text-2xl font-bold mb-4 text-psycho-gray-900">
-                  Insurance Coverage
-                </h2>
-                <p className="text-psycho-gray-600">
-                  Many insurance plans provide coverage for psychological
-                  assessment services when deemed medically necessary. We
-                  recommend contacting your insurance provider directly to
-                  verify your specific coverage details. We are happy to provide
-                  you with the necessary documentation to submit for
-                  reimbursement.
-                </p>
-                <p className="text-psycho-gray-600 mt-4">
-                  We currently accept the following insurance plans:
-                </p>
-                <ul className="list-disc list-inside mt-2 text-psycho-gray-600">
-                  <li>Blue Cross Blue Shield</li>
-                  <li>Aetna</li>
-                  <li>United Healthcare</li>
-                  <li>Cigna</li>
-                  <li>Medicare</li>
+                <ul className="list-disc list-inside text-psycho-gray-600">
+                  {FEE_STRUCTURE_SECTION.points.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
                 </ul>
               </div>
 
+              {/* Payment Policy */}
               <div>
                 <h2 className="font-serif text-2xl font-bold mb-4 text-psycho-gray-900">
-                  Payment Options
+                  {PAYMENT_POLICY_SECTION.heading}
                 </h2>
-                <p className="text-psycho-gray-600">
-                  We accept various payment methods to accommodate your
-                  preferences:
-                </p>
-                <ul className="list-disc list-inside mt-2 text-psycho-gray-600">
-                  <li>
-                    Credit and debit cards (Visa, MasterCard, American Express,
-                    Discover)
-                  </li>
-                  <li>
-                    Health Savings Account (HSA) and Flexible Spending Account
-                    (FSA) cards
-                  </li>
-                  <li>Personal checks</li>
-                  <li>Cash</li>
+                <ul className="list-disc list-inside text-psycho-gray-600">
+                  {PAYMENT_POLICY_SECTION.points.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
                 </ul>
-                <p className="text-psycho-gray-600 mt-4">
-                  Payment is expected at the time of service unless other
-                  arrangements have been made in advance.
-                </p>
               </div>
 
+              {/* Cancellation Policy */}
               <div>
                 <h2 className="font-serif text-2xl font-bold mb-4 text-psycho-gray-900">
-                  Cancellation Policy
+                  {CANCELLATION_POLICY_SECTION.heading}
                 </h2>
-                <p className="text-psycho-gray-600">
-                  We understand that unexpected events may require you to cancel
-                  or reschedule your appointment. We kindly request that you
-                  provide at least 48 hours&apos; notice for any cancellations
-                  or changes. Appointments canceled with less than 48
-                  hours&apos; notice may be subject to a cancellation fee.
-                </p>
+                <ul className="list-disc list-inside text-psycho-gray-600">
+                  {CANCELLATION_POLICY_SECTION.points.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
               </div>
 
+              {/* Financial Assistance */}
               <div>
                 <h2 className="font-serif text-2xl font-bold mb-4 text-psycho-gray-900">
                   Financial Assistance

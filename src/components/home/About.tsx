@@ -4,7 +4,8 @@ import { Check, Shield, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import about from "@/assets/images/about.jpeg";
-import avatar from "@/assets/images/avatar-1.jpeg";
+import { aboutFace } from "@/constants";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -19,8 +20,8 @@ const About = () => {
             <div className="w-full aspect-[4/3] relative overflow-hidden rounded-xl shadow-medium">
               <Image
                 src={about}
-                width={800}
-                height={600}
+                width={7510}
+                height={5009}
                 alt="About our practice"
                 className="w-full h-full object-cover"
               />
@@ -30,7 +31,7 @@ const About = () => {
               <div className="flex items-center space-x-3">
                 <div className="flex -space-x-2">
                   <Image
-                    src={avatar}
+                    src={aboutFace}
                     width={300}
                     height={300}
                     className="w-10 h-10 rounded-full border-2 border-white"
@@ -39,9 +40,9 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-psycho-gray-900">
-                    Our Experts
+                    BA Hons
                   </p>
-                  <p className="text-xs text-psycho-gray-500">PhD Certified</p>
+                  <p className="text-xs text-psycho-gray-500">Cum Laude</p>
                 </div>
               </div>
             </div>
@@ -56,11 +57,12 @@ const About = () => {
             </h2>
 
             <p className="text-psycho-gray-600">
-              With over 15 years of experience, our team of certified
-              psychometrists and clinical psychologists provide state-of-the-art
-              cognitive and psychological assessments. We combine scientific
-              rigor with a compassionate approach to help you understand your
-              unique mental profile.
+              I&apos;m Liam Graham, a certified psychometrist, dedicated to
+              helping you understand your mind on a deeper level. Through
+              state-of-the-art cognitive and psychological assessments, I
+              combine scientific precision with a compassionate approach to
+              provide personalized insights that support your growth and
+              well-being.
             </p>
 
             <div className="space-y-4 pt-2">
@@ -126,9 +128,11 @@ const About = () => {
             </div>
 
             <div className="pt-4">
-              <Button className="bg-psycho-blue-600 hover:bg-psycho-blue-700 text-white shadow-blue">
-                Schedule a Consultation
-              </Button>
+              <Link href={"/contact"} passHref>
+                <Button className="bg-psycho-blue-600 hover:bg-psycho-blue-700 hover:cursor-pointer text-white shadow-blue">
+                  Schedule a Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

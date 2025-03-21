@@ -3,9 +3,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import avatar from "@/assets/images/avatar-1.jpeg";
-import avatar2 from "@/assets/images/avatar-2.jpeg";
-import avatar3 from "@/assets/images/avatar-3.jpeg";
+import avatarPlaceholder from "@/assets/images/avatar-placeholder.png";
 import Image, { StaticImageData } from "next/image";
 interface Testimonial {
   id: number;
@@ -19,27 +17,27 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Anonymous",
     role: "Parent of ADHD Child",
-    image: avatar,
+    image: avatarPlaceholder,
     quote:
       "The cognitive assessment for my son was life-changing. The detailed insights helped us understand his learning style, and the strategies provided have made a tremendous difference in his academic performance.",
     rating: 5,
   },
   {
     id: 2,
-    name: "David Chen",
+    name: "Anonymous",
     role: "Business Executive",
-    image: avatar2,
+    image: avatarPlaceholder,
     quote:
       "The career aptitude testing gave me clarity on my strengths and weaknesses. I was able to pivot my career path based on the findings, and I've never been happier with my professional life.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Emma Williams",
+    name: "Anonymous",
     role: "Graduate Student",
-    image: avatar3,
+    image: avatarPlaceholder,
     quote:
       "After struggling with academic anxiety, the neuropsychological testing helped identify the root causes. With their recommended strategies, I'm now performing better than ever in my studies.",
     rating: 5,
