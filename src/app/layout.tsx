@@ -4,7 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Toaster } from "sonner";
+import { Toaster } from "@/components/ui/sonner";
 
 // Initialize the Inter font
 const inter = Inter({
