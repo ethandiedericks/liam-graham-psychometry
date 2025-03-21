@@ -87,7 +87,7 @@ export async function POST(request: NextRequest) {
     // Create email content
     const mailOptions = {
       from: `"Liam Graham Psychometry" <noreply@liamgrahampsychometry.co.za>`,
-      to: process.env.NOTIFICATION_EMAIL || 'your-email@example.com',
+      to: process.env.NOTIFICATION_EMAIL || 'lgrahampsychometry@outlook.com',
       replyTo: validatedData.email,
       subject: `New Assessment Request: ${serviceName}`,
       text: `
