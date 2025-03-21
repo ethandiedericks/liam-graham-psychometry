@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const FEE_STRUCTURE_SECTION = {
+const FEE_STRUCTURE_SECTION = {
   heading: "Fee Structure",
   points: [
     "Rates are based on GEMS medical aid tariffs released annually. Cash-paying clients receive a discounted rate.",
@@ -23,7 +23,7 @@ export const FEE_STRUCTURE_SECTION = {
   ],
 };
 
-export const PAYMENT_POLICY_SECTION = {
+const PAYMENT_POLICY_SECTION = {
   heading: "Payment Policy",
   points: [
     "Medical Aid: We accept medical aid payments. It's the client's responsibility to claim from their medical aid. If a claim is rejected, the client (or parent for minors) must settle the bill within 72 hours.",
@@ -31,7 +31,7 @@ export const PAYMENT_POLICY_SECTION = {
   ],
 };
 
-export const CANCELLATION_POLICY_SECTION = {
+const CANCELLATION_POLICY_SECTION = {
   heading: "Cancellation Policy",
   points: [
     "We require 24 hours’ cancellation notice. Without this, a cancellation fee will be charged.",
