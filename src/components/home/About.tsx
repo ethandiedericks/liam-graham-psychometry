@@ -3,7 +3,7 @@
 import { Check, Shield, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import about from "@/assets/images/about.jpeg";
+import about from "@/assets/images/psychometry-home-about-image.webp";
 import { aboutFace } from "@/constants";
 import Link from "next/link";
 

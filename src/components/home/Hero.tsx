@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 
-import hero from "@/assets/images/photo-1506794778202-cad84cf45f1d.jpeg";
+import { heroImage } from "@/constants";
 import { contactDetails } from "@/constants";
 import Link from "next/link";
 
@@ -69,11 +69,12 @@ const Hero = () => {
           <div className="absolute inset-0 bg-psycho-blue-600/10 rounded-full blur-3xl animate-pulse-soft"></div>
           <div className="relative z-10 overflow-hidden rounded-2xl shadow-medium">
             <Image
-              src={hero}
-              width={7519}
-              height={5105}
+              src={heroImage}
+              width={1920}
+              height={1080}
               alt="Psychometry Assessment"
               className="w-full h-full object-cover"
+              priority
             />
           </div>
         </div>

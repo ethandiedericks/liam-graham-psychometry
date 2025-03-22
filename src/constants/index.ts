@@ -60,14 +60,16 @@ export const footerLinks = [
 ]
 
 // Images
+import heroImage from "@/assets/images/psychometrist-hero-image.webp";
 import servicePageImage from "@/assets/images/services-page.jpg"
 import aboutPageImage from "@/assets/images/about-page.jpg"
 import paymentTermsPageImage from "@/assets/images/payment-terms-page.jpg"
 import privacyPolicyPageImage from "@/assets/images/privacy-policy-page.jpg"
 import contactPageImage from "@/assets/images/contact-page.jpg"
-import aboutFace from "@/assets/images/liam-graham-about.jpeg"
+import aboutFace from "@/assets/images/psychometry-about-page.webp"
+import avatarPlaceholder from "@/assets/images/psychometry-testimonials-avatar.webp";
 
-export {servicePageImage, aboutPageImage, paymentTermsPageImage, privacyPolicyPageImage, contactPageImage, aboutFace }
+export {heroImage, servicePageImage, aboutPageImage, avatarPlaceholder, paymentTermsPageImage, privacyPolicyPageImage, contactPageImage, aboutFace }
 
 
 // Services

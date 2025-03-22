@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import avatarPlaceholder from "@/assets/images/avatar-placeholder.png";
+import { avatarPlaceholder } from "@/constants";
 import Image, { StaticImageData } from "next/image";
 interface Testimonial {
   id: number;
