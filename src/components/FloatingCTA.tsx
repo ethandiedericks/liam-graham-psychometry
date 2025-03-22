@@ -8,7 +8,7 @@ import { contactDetails } from "@/constants";
 
 const FloatingCTA = () => {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex gap-3">
+    <div className="hidden fixed bottom-6 right-6 z-50 md:flex gap-3">
       <Link
         href={`tel:${contactDetails.phone}`}
         className="bg-white text-primary h-12 w-12 rounded-full flex items-center justify-center shadow-lg hover:bg-secondary transition-colors duration-200"

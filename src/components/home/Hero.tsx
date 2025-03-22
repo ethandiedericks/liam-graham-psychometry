@@ -41,7 +41,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-4 pt-4 animate-fade-in opacity-0 animation-delay-300">
+          <div className="flex flex-col items-center justify-center lg:justify-start md:flex-row gap-4 pt-4 animate-fade-in opacity-0 animation-delay-300">
             <Link href={"/contact"} passHref>
               <Button
                 size="lg"

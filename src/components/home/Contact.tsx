@@ -301,7 +301,7 @@ const Contact = () => {
                       errors.service
                         ? "border-red-500"
                         : "border-psycho-gray-300"
-                    } rounded-md focus:outline-none focus:ring-2 focus:ring-psycho-blue-500 focus:border-transparent transition-colors bg-white`}
+                    } rounded-md text-psycho-gray-700 focus:outline-none focus:ring-2 focus:ring-psycho-blue-500 focus:border-transparent transition-colors bg-white`}
                   >
                     <option value="" disabled>
                       Select a service
@@ -365,7 +365,7 @@ const Contact = () => {
 
                 <div className="text-center">
                   <p className="text-xs text-psycho-gray-500 mt-4">
-                    This site is protected by reCAPTCHA v3.
+                    This site is protected by reCAPTCHA.
                   </p>
                   <p className="text-xs text-psycho-gray-500 text-center mt-1">
                     By submitting this form, you agree to our{" "}
