@@ -51,7 +51,7 @@ const Hero = () => {
               </Button>
             </Link>
 
-            <Link href="tel:+11234567890" passHref>
+            <Link href={`tel:${contactDetails.phone}`} passHref>
               <Button
                 variant="outline"
                 size="lg"
