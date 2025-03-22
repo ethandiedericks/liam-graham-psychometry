@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen grid place-items-center pt-20 overflow-hidden bg-gradient-to-b from-white via-psycho-blue-50/30 to-white">
+    <section className="relative min-h-screen grid place-items-center pt-10 md:pt-20 overflow-hidden bg-gradient-to-b from-white via-psycho-blue-50/30 to-white">
       <div className="absolute inset-0 z-0 opacity-10">
         <div className="absolute top-20 right-[10%] w-72 h-72 bg-psycho-blue-300 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-[10%] w-96 h-96 bg-psycho-blue-400 rounded-full blur-3xl" />
