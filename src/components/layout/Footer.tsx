@@ -185,7 +185,7 @@ const Footer = () => {
           <small className="items-center justify-center text-muted-foreground block text-center text-sm mt-2">
             Created by:&nbsp;
             <Link
-              href="https://nevaeh.dev"
+              href="https://nevaeh.co.za"
               className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"

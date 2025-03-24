@@ -1,5 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import { paymentTermsPageImage } from "@/constants";
+import { contactDetails, paymentTermsPageImage } from "@/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ const FEE_STRUCTURE_SECTION = {
   points: [
     "Rates are based on GEMS medical aid tariffs released annually. Cash-paying clients receive a discounted rate.",
     "Fees for assessments are charged on an hourly basis for client-facing time (intake interview, test administration, and feedback). There is no charge for report writing or scoring.",
-    "An assessment quotation will be provided as soon as possible after the intake session once assessment needs are clarified. Extra time, if needed, is charged per hour.",
+    "Invoices will be issued upon conclusion of sessions.",
     "Payment must be received before the final report is provided.",
   ],
 };
@@ -26,8 +26,8 @@ const FEE_STRUCTURE_SECTION = {
 const PAYMENT_POLICY_SECTION = {
   heading: "Payment Policy",
   points: [
-    "Medical Aid: We accept medical aid payments. It's the client's responsibility to claim from their medical aid. If a claim is rejected, the client (or parent for minors) must settle the bill within 72 hours.",
-    "EFT Payments: We accept cash payments via Electronic Funds Transfer (EFT) only—no hard cash. EFT payments must be made upon receipt of invoice, with proof of payment sent to lgrahampsychometry@outlook.com using your ID number as the reference.",
+    "Medical Aid: We accept medical aid payments and can submit claims on behalf of clients, or they may choose to claim independently. If a claim is rejected, the client (or parent for minors) must settle the bill within 72 hours.",
+    `EFT Payments: We accept cash payments via Electronic Funds Transfer (EFT) only—no hard cash. EFT payments must be made upon receipt of invoice, with proof of payment sent to ${contactDetails.email} using your ID number as the reference.`,
   ],
 };
 
