@@ -440,7 +440,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-medium text-lg">Operating Days</h4>
-                        <p className="text-white/80">Monday - Friday</p>
+                        <p className="text-white/80">Monday - Saturday</p>
                       </div>
                     </div>
 
@@ -450,7 +450,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-medium text-lg">Operating Hours</h4>
-                        <p className="text-white/80">9:00 AM - 5:00 PM</p>
+                        <p className="text-white/80">Weekdays: 08:00 - 16:00</p>
+                        <p className="text-white/80">Saturdays: 09:00- 12:00</p>
                       </div>
                     </div>
                   </div>
