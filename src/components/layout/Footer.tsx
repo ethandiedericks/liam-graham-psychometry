@@ -1,7 +1,7 @@
 import { contactDetails, footerLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/images/logo-vector.svg";
+import logo from "@/assets/images/liam-graham-psychometry-logo-2.png";
 import HPCSA from "@/assets/images/HPCSA.png";
 
 const Footer = () => {
@@ -17,14 +17,7 @@ const Footer = () => {
               aria-label="home"
               className="flex items-center space-x-2 cursor-pointer"
             >
-              <Image
-                src={logo}
-                width={50}
-                height={50}
-                alt="logo"
-                priority={true}
-                unoptimized={true}
-              />
+              <Image src={logo} width={50} height={50} alt="logo" />
             </Link>
           </div>
 

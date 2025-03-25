@@ -75,6 +75,9 @@ const Hero = () => {
               alt="Psychometry Assessment"
               className="w-full h-full object-cover"
               priority
+              quality={75}
+              placeholder="blur"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
         </div>

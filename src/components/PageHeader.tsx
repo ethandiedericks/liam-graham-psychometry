@@ -25,7 +25,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({
           alt={imageAlt}
           width={1920}
           height={384}
-          quality={85}
+          quality={75}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 1280px"
           priority
           className="w-full h-96 object-cover object-center"
         />

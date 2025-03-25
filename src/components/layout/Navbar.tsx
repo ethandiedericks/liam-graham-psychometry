@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/images/logo-vector.svg";
+import logo from "@/assets/images/liam-graham-psychometry-logo-2.png";
 import { menuItems } from "@/constants";
 import Image from "next/image";
 
@@ -40,14 +40,7 @@ export const Navbar = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <Image
-                  src={logo}
-                  width={60}
-                  height={60}
-                  alt="logo"
-                  priority={true}
-                  unoptimized={true}
-                />
+                <Image src={logo} alt="Logo" width={60} height={60} priority />
               </Link>
 
               <button

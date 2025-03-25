@@ -92,7 +92,7 @@ const Services = () => {
                     variant="ghost"
                     className="text-psycho-blue-600 p-0 h-auto hover:bg-transparent hover:text-psycho-blue-800 hover:cursor-pointer hover:underline font-medium"
                   >
-                    Learn more <ArrowRight size={16} className="ml-1" />
+                    View Details <ArrowRight size={16} className="ml-1" />
                   </Button>
                 </Link>
               </div>
