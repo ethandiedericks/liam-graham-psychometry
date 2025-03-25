@@ -7,15 +7,40 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | Liam Graham Psychometry",
   description:
-    "Dedicated to understanding the human mind and helping people unlock their full potential through evidence-based assessments and compassionate care.",
+    "Learn about Liam Graham Psychometry, our mission, values, and expert psychological assessment services.",
+  keywords: [
+    "psychometry",
+    "psychological assessment",
+    "cognitive testing",
+    "career guidance",
+    "ADHD screening",
+  ],
+  alternates: {
+    canonical: "/about",
+  },
   openGraph: {
+    title: "About Us | Liam Graham Psychometry",
+    description:
+      "Discover our commitment to helping individuals through scientifically grounded psychological assessments.",
+    url: "https://liamgrahampsychometry.co.za/about",
+    siteName: "Liam Graham Psychometry",
+    locale: "en_ZA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "About Us | Liam Graham Psychometry",
     description:
       "Learn about our mission, values, and multiple years of excellence in psychological assessment services.",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white">

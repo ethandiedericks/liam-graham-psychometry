@@ -3,13 +3,36 @@ import { contactDetails, paymentTermsPageImage } from "@/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Payment Terms & Policies",
+  title: "Payment Terms & Policies | Liam Graham Psychometry",
   description:
-    "Understanding our billing process, insurance coverage, and payment options for psychological assessment services.",
+    "Learn about our payment terms, medical aid coverage, and accepted payment methods for psychological assessments.",
+  keywords: [
+    "payment terms",
+    "billing policies",
+    "medical aid coverage",
+    "psychometric fees",
+  ],
+  alternates: {
+    canonical: "/payment-terms",
+  },
   openGraph: {
     title: "Payment Terms & Policies | Liam Graham Psychometry",
     description:
-      "Information about our billing process, accepted insurance plans, payment methods, and financial assistance options.",
+      "Understand our billing process, insurance coverage, and financial assistance options for psychological assessments.",
+    url: "https://liamgrahampsychometry.co.za/payment-terms",
+    siteName: "Liam Graham Psychometry",
+    locale: "en_ZA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Payment Terms & Policies | Liam Graham Psychometry",
+    description:
+      "Get details about payment options, medical aid claims, and financial assistance for our psychological assessments.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

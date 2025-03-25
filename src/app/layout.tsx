@@ -29,25 +29,25 @@ const SITE_NAME =
   process.env.NEXT_PUBLIC_SITE_NAME || "Liam Graham Psychometry";
 const SITE_DESCRIPTION =
   process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-  "Liam Graham Psychometry specializes in Scholastic Screening, Special School Placement, ADHD Screening, Cognitive Ability, School Readiness, Behaviour, Concessions, IQ and Career Guidance.";
+  "Expert psychometric assessments in South Africa. Services include ADHD Screening, IQ Testing, Career Guidance, and Special School Placement.";
 const GOOGLE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || "";
 
 export const metadata: Metadata = {
   title: {
-    default: SITE_NAME,
+    default: `${SITE_NAME} | Psychometric Assessments & Career Guidance`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    "psychometry",
-    "educational psychology",
-    "scholastic screening",
-    "ADHD screening",
-    "cognitive assessment",
-    "IQ testing",
-    "career guidance",
-    "school readiness",
-    "special school placement",
+    "psychometry South Africa",
+    "educational psychologist",
+    "scholastic screening services",
+    "ADHD screening tests",
+    "cognitive ability assessments",
+    "IQ testing near me",
+    "career guidance counselor",
+    "school readiness assessment",
+    "special school placement SA",
   ],
   authors: [
     {
@@ -64,13 +64,13 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: "/",
+    canonical: SITE_URL, // Use full absolute URL
     languages: {
-      "en-ZA": "/en-ZA",
+      "en-ZA": `${SITE_URL}/en-ZA`,
     },
   },
   openGraph: {
-    title: SITE_NAME,
+    title: `${SITE_NAME} | Psychometric Assessments & Career Guidance`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
@@ -81,13 +81,13 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/opengraph-image.jpg`,
         width: 1200,
         height: 630,
-        alt: SITE_NAME,
+        alt: "Liam Graham Psychometry - Expert Assessments",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: SITE_NAME,
+    title: `${SITE_NAME} | Expert Psychometric Assessments`,
     description: SITE_DESCRIPTION,
     images: [`${SITE_URL}/opengraph-image.jpg`],
   },
