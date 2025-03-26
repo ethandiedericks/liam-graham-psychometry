@@ -35,7 +35,7 @@ const faqItems: FAQItem[] = [
       "Yes, all assessment results are strictly confidential and protected under healthcare privacy laws. Information is only shared with third parties (such as schools or employers) with your explicit written consent, except in rare cases where there is a risk of harm to yourself or others.",
   },
   {
-    question: "Does Medical cover psychometric assessments?",
+    question: "Does Medical Aid cover psychometric assessments?",
     answer:
       "Many Medical plans cover psychometric assessments when they're medically necessary. Coverage varies by provider and plan. We recommend contacting your Medical company directly to verify coverage.",
   },

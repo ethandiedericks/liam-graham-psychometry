@@ -34,9 +34,9 @@ const Services = () => {
             Specialized Assessment Services
           </h2>
           <p className="text-psycho-gray-600 text-lg">
-            Our comprehensive range of psychometric assessments helps
-            individuals understand their cognitive abilities, emotional
-            patterns, and potential for growth.
+            Our comprehensive range of psychometric assessments help individuals
+            understand their cognitive abilities, emotional patterns, and
+            potential for growth.
           </p>
         </div>
 
