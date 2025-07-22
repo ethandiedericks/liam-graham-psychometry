@@ -181,7 +181,7 @@ const Footer = () => {
               href="https://nevaeh.co.za"
               className="hover:underline"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
             >
               Nevaeh Solutions (Pty) Ltd
             </Link>
